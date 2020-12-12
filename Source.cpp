@@ -1,4 +1,5 @@
 # include "class.h"
+#include "MusicFestival.h"
 
 int main()
 {
@@ -9,17 +10,18 @@ int main()
 	Musician fiveth("Eminem", 130000, 48, "Canada", 0);
 	Musician sixth("One Direction", 150000, 10, "UK", 1);
 	Musician seventh("Okean Elzy", 150000, 26, "Ukrain", 1);
-	vector <Musician>arr(7);
-	arr[0] = first;
-	arr[1] = second;
-	arr[2] = third;
-	arr[3] = fourth;
-	arr[4] = fiveth;
-	arr[5] = sixth;
-	arr[6] = seventh;
+	vector <Musician>ListOfMusicians(0);
 
-	MusicFestival one(arr, 10000000);
+	MusicFestival one(ListOfMusicians, 10000000);
+	one.addMusician(first);
+	one.addMusician(second);
+	one.addMusician(third);
+	one.addMusician(fourth);
+	one.addMusician(fiveth);
+	one.addMusician(sixth);
+	one.addMusician(seventh);
 	one.check();
+
 
 	return 0;
 }
