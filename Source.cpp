@@ -21,7 +21,7 @@ int main()
 	one.addMusician(sixth);
 	one.addMusician(seventh);
 	one.check();
-
+    one.check();
 
 	return 0;
 }

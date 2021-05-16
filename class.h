@@ -26,4 +26,3 @@ public:
 	string getCountry();
 	bool getBand();
 };
-
